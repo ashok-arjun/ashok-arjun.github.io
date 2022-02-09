@@ -33,7 +33,7 @@
 
 */
 /* Basscss Base Buttons */
-button, .button { font-family: Lato, Helvetica, sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 1.125rem; padding: 0.5rem 1rem; margin: 0; height: auto; border: 1px solid transparent; vertical-align: middle; -webkit-appearance: none; }
+button, .button { font-family: Lato, Helvetica, sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 1.125rem; padding: 0.5rem 1rem; margin: 0; height: auto; border: 1px solid transparent; vertical-align: middle; -webkit-appearance: none; font-display: swap }
 
 ::-moz-focus-inner { border: 0; padding: 0; }
 
@@ -63,15 +63,15 @@ img { max-width: 100%; }
 svg { max-height: 100%; }
 
 /* Basscss Base Typography */
-body { font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 100%; }
+body { font-family: Lato, Helvetica, Arial, sans-serif; line-height: 1.5; font-size: 100%; font-display: swap}
 
-h1, h2, h3, h4, h5, h6 { font-family: Lato, Helvetica, sans-serif; font-weight: 900; line-height: 1.25; margin-top: 1em; margin-bottom: .5em; }
+h1, h2, h3, h4, h5, h6 { font-family: Lato, Helvetica, sans-serif; font-weight: 900; line-height: 1.25; margin-top: 1em; margin-bottom: .5em; font-display: swap}
 
 p, dl, ol, ul { font-size: 1rem; margin-top: 0; margin-bottom: 1rem; }
 
 ol, ul { padding-left: 2rem; }
 
-pre, code, samp { font-family: "Source Code Pro", Consolas, monospace; font-size: inherit; }
+pre, code, samp { font-family: "Source Code Pro", Consolas, monospace; font-size: inherit; font-display: swap}
 
 pre { margin-top: 0; margin-bottom: 1rem; overflow-x: scroll; }
 
@@ -344,7 +344,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 
 .site-header { border-bottom: 1px solid #e8e8e8; background-color: #fff; opacity: 0.95; position: fixed; left: calc((100vw - 100%)/2); top: 0px; width: 100%; z-index: 50; }
 
-.site-title { font-family: Lato, "Roboto", Helvetica; font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; }
+.site-title { font-family: Lato, "Roboto", Helvetica; font-size: 20px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; font-display: swap}
 
 .site-nav { float: right; line-height: 56px; }
 .site-nav .nav-trigger { display: none; }
@@ -401,7 +401,7 @@ footer a:hover { color: green; }
 
 .profile img { width: 100%; }
 
-.address { font-family: monospace; }
+.address { font-family: monospace; font-display: swap}
 .address p { margin: 0; }
 
 .news { border-top: 1px solid #e8e8e8; margin-top: 30px; padding-top: 20px; }
@@ -414,7 +414,7 @@ footer a:hover { color: green; }
 
 .social { border-top: 1px solid #e8e8e8; padding-top: 20px; }
 
-.pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; }
+.pagination { font-size: 1rem; font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; text-align: center; font-display: swap}
 
 .pagination a, .pagination .disabled { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; background: #fafafa; border-radius: 0.1875em; border: 1px solid #f3f3f3; color: #333333; padding: 1em 1.5em; }
 
@@ -460,7 +460,7 @@ blockquote footer { background-color: #fff; border-color: transparent; color: #7
 
 pre, pre code { background-color: transparent; border-radius: 0; }
 
-pre, code { font-family: "Source Code Pro", Consolas, monospace; }
+pre, code { font-family: "Source Code Pro", Consolas, monospace; font-display: swap}
 
 code { color: #333; font-size: 85%; padding-bottom: 0.1em; padding-left: 0.2em; padding-right: 0.2em; padding-top: 0.1em; }
 

@@ -331,32 +331,29 @@
                                         Extremely Simple Activation Shaping for Out-of-Distribution Detection
                                     </h5>
                                     Andrija Djurisic,
-                                    <strong>Arjun Ashok</strong>,
                                     Nebojsa Bozanic,
+                                    <strong>Arjun Ashok</strong>,
                                     <a href="http://rosanneliu.com/">Rosanne Liu</a>
                                     <br>
-                                    Preprint to be out soon, <span style="text-decoration: underline;">Under Review</span> at <a href="http://neurips.cc">NeurIPS 2022</a>
-                                    <!-- <br>
+                                    <!-- Preprint to be out soon,  -->
+                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://iclr.cc/Conferences/2023">ICLR 2023</a>
+                                    <br>
                                     <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr1" role="button" aria-expanded="false" aria-controls="tldr1">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="abs1">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="papers/AAAI22Modular.pdf">Short Version</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr1" role="button" aria-expanded="false" aria-controls="tldrASH">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="absASH">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2209.09858">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://andrijazz.github.io/ash/">Code</a>
                                     </p>
-                                    <div class="collapse" id="tldr1">
+                                    <div class="collapse" id="tldrASH">
                                         <div class="card card-body" align="justify">
-                                            Designed two regularizers that enforce a network to preserve expert features that are reusable across domains, enabling them to extrapolate to unseen distributions better 
+                                            We develop an extremely simple, post hoc, on-the-fly, and plug-and-play activation shaping method for out-of-distribution detection. 
                                         </div>
                                     </div>
-                                    <div class="collapse" id="abs1">
+                                    <div class="collapse" id="absASH">
                                         <div class="card card-body" align="justify">
-                                            Out-of-distribution (O.O.D.) generalization remains to be a key challenge for real-world machine learning 
-                                            systems. We describe a method for O.O.D. generalization that, through training, encourages models to only 
-                                            preserve features in the network that are well reused across multiple training domains. Our method 
-                                            combines two complementary neuron-level regularizers with a probabilistic differentiable binary mask 
-                                            over the network, to extract a modular sub-network that achieves better O.O.D. performance than the 
-                                            original network. Preliminary evaluation on two benchmark datasets corroborates the promise of our method.
+                                            The separation between training and deployment of machine learning models implies that not all scenarios encountered in deployment can be anticipated during training, and therefore relying solely on advancements in training has its limits. Out-of-distribution (OOD) detection is an important area that stress-tests a model's ability to handle unseen situations: Do models know when they don't know? Existing OOD detection methods either incur extra training steps, additional data or make nontrivial modifications to the trained network. In contrast, in this work, we propose an extremely simple, post-hoc, on-the-fly activation shaping method, ASH, where a large portion (e.g. 90%) of a sample's activation at a late layer is removed, and the rest (e.g. 10%) simplified or lightly adjusted. The shaping is applied at inference time, and does not require any statistics calculated from training data. Experiments show that such a simple treatment enhances in-distribution and out-of-distribution sample distinction so as to allow state-of-the-art OOD detection on ImageNet, and does not noticeably deteriorate the in-distribution accuracy. We release alongside the paper two calls for explanation and validation, believing the collective power to further validate and understand the discovery.
                                         </div>
-                                    </div> -->
+                                    </div>
                                     
                                 </div>
                                 </center>

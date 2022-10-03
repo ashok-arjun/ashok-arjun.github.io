@@ -68,7 +68,10 @@
                                 <a class="nav-link" href="#news">News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#papers">Papers</a>
+                                <a class="nav-link" href="#publications">Publications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#preprints">Preprints</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#ongoing">Ongoing Work</a>
@@ -314,89 +317,9 @@
             </div>
 
             <!-- Research -->
-            <div class="px-4 py-2 row justify-content-md-center" id="papers">
+            <div class="px-4 py-2 row justify-content-md-center" id="publications">
                 <div class="col col-md-9 px-5">
-                    <h2>Papers</h2>
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Extremely Simple Activation Shaping for Out-of-Distribution Detection
-                                    </h5>
-                                    Andrija Djurisic,
-                                    Nebojsa Bozanic,
-                                    <strong>Arjun Ashok</strong>,
-                                    <a href="http://rosanneliu.com/">Rosanne Liu</a>
-                                    <br>
-                                    <!-- Preprint to be out soon,  -->
-                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://iclr.cc/Conferences/2023">ICLR 2023</a>
-                                    <br>
-                                    <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldrASH" role="button" aria-expanded="false" aria-controls="tldrASH">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#absASH" role="button" aria-expanded="false" aria-controls="absASH">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2209.09858">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://andrijazz.github.io/ash/">Project Page</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/andrijazz/ash">Code</a>
-                                    </p>
-                                    <div class="collapse" id="tldrASH">
-                                        <div class="card card-body" align="justify">
-                                            We develop an extremely simple, post hoc, on-the-fly, and plug-and-play activation shaping method for out-of-distribution detection. 
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="absASH">
-                                        <div class="card card-body" align="justify">
-                                            The separation between training and deployment of machine learning models implies that not all scenarios encountered in deployment can be anticipated during training, and therefore relying solely on advancements in training has its limits. Out-of-distribution (OOD) detection is an important area that stress-tests a model's ability to handle unseen situations: Do models know when they don't know? Existing OOD detection methods either incur extra training steps, additional data or make nontrivial modifications to the trained network. In contrast, in this work, we propose an extremely simple, post-hoc, on-the-fly activation shaping method, ASH, where a large portion (e.g. 90%) of a sample's activation at a late layer is removed, and the rest (e.g. 10%) simplified or lightly adjusted. The shaping is applied at inference time, and does not require any statistics calculated from training data. Experiments show that such a simple treatment enhances in-distribution and out-of-distribution sample distinction so as to allow state-of-the-art OOD detection on ImageNet, and does not noticeably deteriorate the in-distribution accuracy. We release alongside the paper two calls for explanation and validation, believing the collective power to further validate and understand the discovery.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks
-                                    </h5>
-                                    Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, 
-                                    <strong>Arjun Ashok</strong>,
-                                    ...,
-                                    Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi, Daniel Khashabi <b>(40 authors)</b>
-                                    <br>
-                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://2022.emnlp.org">EMNLP 2022</a>
-                                    <br>
-                                    <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="abs1">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2204.07705">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/allenai/natural-instructions">Code</a>
-                                    </p>
-                                    <div class="collapse" id="abs1">
-                                        <div class="card card-body" align="justify">
-                                            How can we measure the generalization of models to a variety of unseen tasks when provided with their language instructions? To facilitate progress in this goal, we introduce Natural-Instructions v2, a benchmark of 1,600+ diverse language tasks and their expert-written instructions. It covers 70+ distinct task types, such as tagging, in-filling, and rewriting. These tasks are collected with contributions of NLP practitioners in the community and through an iterative peer review process to ensure their quality. With this large and diverse collection of tasks, we are able to rigorously benchmark cross-task generalization of models -- training on a subset of tasks and evaluating on the remaining unseen ones. For instance, we quantify generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances, and model sizes. Based on these insights, we introduce Tk-Instruct, an encoder-decoder Transformer that is trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples) which outperforms existing larger models on our benchmark. We hope this benchmark facilitates future progress toward more general-purpose language understanding models.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h2>Publications</h2>
                     <div class="card mb-3">
                         <div class="row g-0">
                             <!-- <div class="col-md-4 text-center my-4 px-2">
@@ -534,6 +457,92 @@
                 </div>
             </div>
 
+
+            <!-- Preprints -->
+            <div class="px-4 py-2 row justify-content-md-center" id="preprints">
+                <div class="col col-md-9 px-5">
+                    <h2>Preprints</h2>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Extremely Simple Activation Shaping for Out-of-Distribution Detection
+                                    </h5>
+                                    Andrija Djurisic,
+                                    Nebojsa Bozanic,
+                                    <strong>Arjun Ashok</strong>,
+                                    <a href="http://rosanneliu.com/">Rosanne Liu</a>
+                                    <br>
+                                    <!-- Preprint to be out soon,  -->
+                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://iclr.cc/Conferences/2023">ICLR 2023</a>
+                                    <br>
+                                    <p>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldrASH" role="button" aria-expanded="false" aria-controls="tldrASH">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#absASH" role="button" aria-expanded="false" aria-controls="absASH">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2209.09858">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://andrijazz.github.io/ash/">Project Page</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/andrijazz/ash">Code</a>
+                                    </p>
+                                    <div class="collapse" id="tldrASH">
+                                        <div class="card card-body" align="justify">
+                                            We develop an extremely simple, post hoc, on-the-fly, and plug-and-play activation shaping method for out-of-distribution detection. 
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="absASH">
+                                        <div class="card card-body" align="justify">
+                                            The separation between training and deployment of machine learning models implies that not all scenarios encountered in deployment can be anticipated during training, and therefore relying solely on advancements in training has its limits. Out-of-distribution (OOD) detection is an important area that stress-tests a model's ability to handle unseen situations: Do models know when they don't know? Existing OOD detection methods either incur extra training steps, additional data or make nontrivial modifications to the trained network. In contrast, in this work, we propose an extremely simple, post-hoc, on-the-fly activation shaping method, ASH, where a large portion (e.g. 90%) of a sample's activation at a late layer is removed, and the rest (e.g. 10%) simplified or lightly adjusted. The shaping is applied at inference time, and does not require any statistics calculated from training data. Experiments show that such a simple treatment enhances in-distribution and out-of-distribution sample distinction so as to allow state-of-the-art OOD detection on ImageNet, and does not noticeably deteriorate the in-distribution accuracy. We release alongside the paper two calls for explanation and validation, believing the collective power to further validate and understand the discovery.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks
+                                    </h5>
+                                    Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, 
+                                    <strong>Arjun Ashok</strong>,
+                                    ...,
+                                    Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi, Daniel Khashabi <b>(40 authors)</b>
+                                    <br>
+                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://2022.emnlp.org">EMNLP 2022</a>
+                                    <br>
+                                    <p>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="abs1">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2204.07705">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/allenai/natural-instructions">Code</a>
+                                    </p>
+                                    <div class="collapse" id="abs1">
+                                        <div class="card card-body" align="justify">
+                                            How can we measure the generalization of models to a variety of unseen tasks when provided with their language instructions? To facilitate progress in this goal, we introduce Natural-Instructions v2, a benchmark of 1,600+ diverse language tasks and their expert-written instructions. It covers 70+ distinct task types, such as tagging, in-filling, and rewriting. These tasks are collected with contributions of NLP practitioners in the community and through an iterative peer review process to ensure their quality. With this large and diverse collection of tasks, we are able to rigorously benchmark cross-task generalization of models -- training on a subset of tasks and evaluating on the remaining unseen ones. For instance, we quantify generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances, and model sizes. Based on these insights, we introduce Tk-Instruct, an encoder-decoder Transformer that is trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples) which outperforms existing larger models on our benchmark. We hope this benchmark facilitates future progress toward more general-purpose language understanding models.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!--Ongoing work-->
             <div class="px-4 py-2 row justify-content-md-center" id="ongoing">

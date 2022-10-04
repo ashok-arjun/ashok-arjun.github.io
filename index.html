@@ -259,7 +259,7 @@
                             </tr>
                             <tr>
                                 <td class="col-sm-2"><b>Aug '22</b></td>
-                                <td>Preliminary work on self-supervised learning objectives for weather time series <span style="text-decoration: underline;">accepted</span> at the <a href="https://sites.google.com/view/clvision2022/overview?authuser=0">AAAI 2022 Fall Symposium on Climate Change</a>. We show interesting results on a variety of downstream time series forecasting/regression/classification tasks. Preprint to be out soon!
+                                <td>Preliminary <a href="preprints/SSL_Weather_AAAISym22.pdf" target="_blank">work</a> on self-supervised learning objectives for weather time series <span style="text-decoration: underline;">accepted</span> at the <a href="https://sites.google.com/view/clvision2022/overview?authuser=0">AAAI 2022 Fall Symposium on Climate Change</a>. We show interesting results on a variety of downstream time series forecasting/regression/classification tasks.
                                 </td>
                             </tr>
                             <tr>
@@ -374,13 +374,59 @@
                                 <center>
                                 <div class="card-body">
                                     <h5 class="card-title">
+                                        Self-Supervised Representations of Geolocated Weather Time Series - an Evaluation and Analysis
+                                    </h5>
+                                    <strong>Arjun Ashok</strong>,
+                                    Devyani Lambhate, Jitendra Singh
+                                    <br>
+                                    <span style="text-decoration: underline;">Accepted</span> at <strong>AAAI Conference on Artificial Intelligence (<a href="https://www.climatechange.ai/events/aaaifss2022">AAAI</a>) 2022</strong> Climate Change Symposium
+                                    <br>
+                                    <p>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_aaaiclim" role="button" aria-expanded="false" aria-controls="tldr_aaaiclim">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_aaaiclim" role="button" aria-expanded="false" aria-controls="abs_aaaiclim">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="preprints/SSL_Weather_AAAISym22.pdf">Preprint</a>
+                                        <!-- (Long Version coming soon!) -->
+                                    </p>
+                                    <div class="collapse" id="tldr_aaaiclim">
+                                        <div class="card card-body" align="justify">
+                                            We analyse existing self-supervised multivariate time series learning algorithms on their ability to learn representations of weather features, evaluating them on weather-driven downstream applications
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="abs_aaaiclim">
+                                        <div class="card card-body" align="justify">
+                                            Self-supervised learning (SSL) algorithms are gaining traction in various domains as a general paradigm of learning representations from data, largely outperforming supervised learning algorithms in tasks where labelled data is limited and costly to collect. 
+                                            In this work, we analyse existing self-supervised multivariate time series learning algorithms on their ability to learn representations of weather features, evaluating them on weather-driven downstream applications involving regression, classification and forecasting tasks.
+                                            We experiment with a two-step protocol.
+                                            In the first step, we employ an SSL algorithm and learn generic weather representations from multivariate weather data. 
+                                            Then, in the next step, we use these representations and train simple linear models for multiple downstream tasks.
+                                            Through our experiments on air quality prediction tasks, we highlight the benefits of self-supervised weather representations. The benefits include improved performance across multiple tasks, the ability to generalize with limited in-task data, and a reduction in training time and carbon emissions.
+                                            We highlight several areas of future work and the potential impact that such algorithms can have on real-world problems.
+                                            We expect such a direction to be relevant in multiple weather-driven applications supporting climate change mitigation and adaptation efforts.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
                                         Learning Modular Structures That Generalize Out-Of-Distribution
                                     </h5>
                                     <strong>Arjun Ashok</strong>,
                                     Chaitanya TD,
                                     Vineeth N Balasubramanian
                                     <br>
-                                    <span style="text-decoration: underline;">Accepted</span> at <strong>AAAI Conference on Artificial Intelligence (<a href="https://aaai.org/Conferences/AAAI-22/">AAAI</a>) 2022</strong>
+                                    <span style="text-decoration: underline;">Accepted</span> at <strong>AAAI Conference on Artificial Intelligence (<a href="https://aaai.org/Conferences/AAAI-22/">AAAI</a>) 2022</strong> Student Track
                                     <br>
                                     <p>
                                         <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr1" role="button" aria-expanded="false" aria-controls="tldr1">TL;DR</a>

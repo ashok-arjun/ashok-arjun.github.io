@@ -272,7 +272,8 @@
                             </tr>
                             <tr>
                                 <td><b>Jun '22</b></td>
-                                <td>One <a href="https://arxiv.org/abs/2204.07705" target="_blank">paper</a> on cross-task generalization in NLP <span style="text-decoration: underline;">submitted</span> to EMNLP 2022. Check out our <a href="https://github.com/allenai/natural-instructions" target="_blank">repository</a> of language instructions for NLP tasks!</td>
+                                <td>One <a href="https://arxiv.org/abs/2204.07705" target="_blank">paper</a> on cross-task generalization in NLP <span style="text-decoration: underline;">submitted</span> to EMNLP 2022 (Update: Accepted). 
+                                <!-- Check out our <a href="https://github.com/allenai/natural-instructions" target="_blank">repository</a> of language instructions for NLP tasks and the <a href="https://github.com/yizhongw/Tk-Instruct">code</a> for our experiments on cross-task generalization!</td> -->
                             </tr>
                         </tbody>
                     </table>
@@ -456,6 +457,44 @@
                         </div>
                     </div>
 
+
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks
+                                    </h5>
+                                    Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, 
+                                    <strong>Arjun Ashok</strong>,
+                                    ...,
+                                    Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi, Daniel Khashabi <b>(40 authors)</b>
+                                    <br>
+                                    <span style="text-decoration: underline;">Accepted</span> at <a href="https://2022.emnlp.org">EMNLP 2022</a>
+                                    <br>
+                                    <p>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="abs1">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2204.07705">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/allenai/natural-instructions">Dataset</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/yizhongw/Tk-Instruct">Code</a>
+                                    </p>
+                                    <div class="collapse" id="abs1">
+                                        <div class="card card-body" align="justify">
+                                            How can we measure the generalization of models to a variety of unseen tasks when provided with their language instructions? To facilitate progress in this goal, we introduce Natural-Instructions v2, a benchmark of 1,600+ diverse language tasks and their expert-written instructions. It covers 70+ distinct task types, such as tagging, in-filling, and rewriting. These tasks are collected with contributions of NLP practitioners in the community and through an iterative peer review process to ensure their quality. With this large and diverse collection of tasks, we are able to rigorously benchmark cross-task generalization of models -- training on a subset of tasks and evaluating on the remaining unseen ones. For instance, we quantify generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances, and model sizes. Based on these insights, we introduce Tk-Instruct, an encoder-decoder Transformer that is trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples) which outperforms existing larger models on our benchmark. We hope this benchmark facilitates future progress toward more general-purpose language understanding models.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="card mb-3">
                         <div class="row g-0">
                             <!-- <div class="col-md-4 text-center my-4">
@@ -552,41 +591,6 @@
                         </div>
                     </div>
 
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks
-                                    </h5>
-                                    Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, 
-                                    <strong>Arjun Ashok</strong>,
-                                    ...,
-                                    Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi, Daniel Khashabi <b>(40 authors)</b>
-                                    <br>
-                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://2022.emnlp.org">EMNLP 2022</a>
-                                    <br>
-                                    <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs1" role="button" aria-expanded="false" aria-controls="abs1">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2204.07705">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/allenai/natural-instructions">Code</a>
-                                    </p>
-                                    <div class="collapse" id="abs1">
-                                        <div class="card card-body" align="justify">
-                                            How can we measure the generalization of models to a variety of unseen tasks when provided with their language instructions? To facilitate progress in this goal, we introduce Natural-Instructions v2, a benchmark of 1,600+ diverse language tasks and their expert-written instructions. It covers 70+ distinct task types, such as tagging, in-filling, and rewriting. These tasks are collected with contributions of NLP practitioners in the community and through an iterative peer review process to ensure their quality. With this large and diverse collection of tasks, we are able to rigorously benchmark cross-task generalization of models -- training on a subset of tasks and evaluating on the remaining unseen ones. For instance, we quantify generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances, and model sizes. Based on these insights, we introduce Tk-Instruct, an encoder-decoder Transformer that is trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples) which outperforms existing larger models on our benchmark. We hope this benchmark facilitates future progress toward more general-purpose language understanding models.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 

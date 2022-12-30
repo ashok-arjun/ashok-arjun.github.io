@@ -460,7 +460,7 @@
                                 <center>
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        Benchmarking Generalization via In-Context Instructions on 1,600+ Language Tasks
+                                        Super-NaturalInstructions: Generalization via Declarative Instructions on 1600+ NLP Tasks
                                     </h5>
                                     Yizhong Wang, Swaroop Mishra, Pegah Alipoormolabashi, Yeganeh Kordi, Amirreza Mirzaei, Anjana Arunkumar, 
                                     <strong>Arjun Ashok</strong>,
@@ -475,6 +475,7 @@
                                         <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2204.07705">arXiv</a>
                                         <a class="btn btn-outline-primary" target="_blank" href="https://github.com/allenai/natural-instructions">Dataset</a>
                                         <a class="btn btn-outline-primary" target="_blank" href="https://github.com/yizhongw/Tk-Instruct">Code</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://instructions.apps.allenai.org/">Project Page</a>
                                     </p>
                                     <div class="collapse" id="tldr_emnlp">
                                         <div class="card card-body" align="justify">
@@ -483,7 +484,7 @@
                                     </div>
                                     <div class="collapse" id="abs1">
                                         <div class="card card-body" align="justify">
-                                            How can we measure the generalization of models to a variety of unseen tasks when provided with their language instructions? To facilitate progress in this goal, we introduce Natural-Instructions v2, a benchmark of 1,600+ diverse language tasks and their expert-written instructions. It covers 70+ distinct task types, such as tagging, in-filling, and rewriting. These tasks are collected with contributions of NLP practitioners in the community and through an iterative peer review process to ensure their quality. With this large and diverse collection of tasks, we are able to rigorously benchmark cross-task generalization of models -- training on a subset of tasks and evaluating on the remaining unseen ones. For instance, we quantify generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances, and model sizes. Based on these insights, we introduce Tk-Instruct, an encoder-decoder Transformer that is trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples) which outperforms existing larger models on our benchmark. We hope this benchmark facilitates future progress toward more general-purpose language understanding models.
+                                            How well can NLP models generalize to a variety of unseen tasks when provided with task instructions? To address this question, we first introduce Super-NaturalInstructions, a benchmark of 1,616 diverse NLP tasks and their expert-written instructions. Our collection covers 76 distinct task types, including but not limited to classification, extraction, infilling, sequence tagging, text rewriting, and text composition. This large and diverse collection of tasks enables rigorous benchmarking of cross-task generalization under instructions -- training models to follow instructions on a subset of tasks and evaluating them on the remaining unseen ones. Furthermore, we build Tk-Instruct, a transformer model trained to follow a variety of in-context instructions (plain language task definitions or k-shot examples). Our experiments show that Tk-Instruct outperforms existing instruction-following models such as InstructGPT by over 9% on our benchmark despite being an order of magnitude smaller. We further analyze generalization as a function of various scaling parameters, such as the number of observed tasks, the number of instances per task, and model sizes. We hope our dataset and model facilitate future progress towards more general-purpose NLP models.
                                         </div>
                                     </div>
                                     

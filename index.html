@@ -70,9 +70,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#publications">Publications</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#preprints">Preprints</a>
-                            </li>
+                            </li> -->
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="#ongoing">Ongoing Work</a>
                             </li> -->
@@ -357,12 +357,12 @@
                         <tbody>
                             <tr>
                                 <td><b>Jan '23</b></td>
-                                <td>Started as a Research Intern at ServiceNow Research, Montreal. Excited to continue working on problems in time series representation learning!
+                                <td>One <a href="https://arxiv.org/abs/2209.09858" target="_blank">paper</a> on out-of-distribution detection <span style="text-decoration: underline;">accepted</span> to ICLR 2023. This is work in collaboration with folks at <a href="https://mlcollective.org" target="_blank">ML Collective</a> mentored by <a href="https://rosanneliu.com" target="_blank">Rosanne Liu</a>.
                                 </td>
                             </tr>
                             <tr>
-                                <td><b>Sep '22</b></td>
-                                <td>One <a href="https://arxiv.org/abs/2209.09858" target="_blank">paper</a> on out-of-distribution detection <span style="text-decoration: underline;">submitted</span> to ICLR 2023. This is work in collaboration with folks at <a href="https://mlcollective.org" target="_blank">ML Collective</a> mentored by <a href="https://rosanneliu.com" target="_blank">Rosanne Liu</a>.
+                                <td><b>Jan '23</b></td>
+                                <td>Started as a Research Intern at ServiceNow Research, Montreal. Excited to continue working on problems in time series representation learning!
                                 </td>
                             </tr>
                             <tr>
@@ -431,6 +431,7 @@
                 <div class="col col-md-9 px-5">
                     <h2>Publications</h2>
                     <h4>Conference Publications</h4>
+                    <h4>Publications as First-Author</h4>
                     <div class="card mb-3">
                         <div class="row g-0">
                             <!-- <div class="col-md-4 text-center my-4 px-2">
@@ -466,6 +467,54 @@
                                         <div class="card card-body" align="justify">
                                             In class-incremental learning, the model is expected to learn new classes continually while maintaining knowledge on previous classes. The challenge here lies in preserving the model's ability to effectively represent prior classes in the feature space, while adapting it to represent incoming new classes. We propose two distillation-based objectives for class incremental learning that leverage the structure of the feature space to maintain accuracy on previous classes, as well as enable learning the new classes. In our first objective, termed cross-space clustering (CSC), we propose to use the feature space structure of the previous model to characterize directions of optimization that maximally preserve the class - directions that all instances of a specific class should collectively optimize towards, and those that they should collectively optimize away from. Apart from minimizing forgetting, this indirectly encourages the model to cluster all instances of a class in the current feature space, and gives rise to a sense of herd-immunity, allowing all samples of a class to jointly combat the model from forgetting the class. Our second objective termed controlled transfer (CT) tackles incremental learning from an understudied perspective of inter-class transfer. CT explicitly approximates and conditions the current model on the semantic similarities between incrementally arriving classes and prior classes. This allows the model to learn classes in such a way that it maximizes positive forward transfer from similar prior classes, thus increasing plasticity, and minimizes negative backward transfer on dissimilar prior classes, whereby strengthening stability. We perform extensive experiments on two benchmark datasets, adding our method (CSCCT) on top of three prominent class-incremental learning methods. We observe consistent performance improvement on a variety of experimental settings.
 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Publications as Co-Author</h4>
+
+
+
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Extremely Simple Activation Shaping for Out-of-Distribution Detection
+                                    </h5>
+                                    Andrija Djurisic,
+                                    Nebojsa Bozanic,
+                                    <strong>Arjun Ashok</strong>,
+                                    <a href="http://rosanneliu.com/">Rosanne Liu</a>
+                                    <br>
+                                    <!-- Preprint to be out soon,  -->
+                                    <span style="text-decoration: underline;">Accepted</span> at <a href="https://iclr.cc/Conferences/2023">ICLR 2023</a>
+                                    <br>
+                                    <p>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldrASH" role="button" aria-expanded="false" aria-controls="tldrASH">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#absASH" role="button" aria-expanded="false" aria-controls="absASH">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2209.09858">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://andrijazz.github.io/ash/">Project Page</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/andrijazz/ash">Code</a>
+                                    </p>
+                                    <div class="collapse" id="tldrASH">
+                                        <div class="card card-body" align="justify">
+                                            We develop an extremely simple, post hoc, on-the-fly, and plug-and-play activation shaping method for out-of-distribution detection. 
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="absASH">
+                                        <div class="card card-body" align="justify">
+                                            The separation between training and deployment of machine learning models implies that not all scenarios encountered in deployment can be anticipated during training, and therefore relying solely on advancements in training has its limits. Out-of-distribution (OOD) detection is an important area that stress-tests a model's ability to handle unseen situations: Do models know when they don't know? Existing OOD detection methods either incur extra training steps, additional data or make nontrivial modifications to the trained network. In contrast, in this work, we propose an extremely simple, post-hoc, on-the-fly activation shaping method, ASH, where a large portion (e.g. 90%) of a sample's activation at a late layer is removed, and the rest (e.g. 10%) simplified or lightly adjusted. The shaping is applied at inference time, and does not require any statistics calculated from training data. Experiments show that such a simple treatment enhances in-distribution and out-of-distribution sample distinction so as to allow state-of-the-art OOD detection on ImageNet, and does not noticeably deteriorate the in-distribution accuracy. We release alongside the paper two calls for explanation and validation, believing the collective power to further validate and understand the discovery.
                                         </div>
                                     </div>
                                     
@@ -517,6 +566,7 @@
                             </div>
                         </div>
                     </div>
+
 
                     <h4>Workshop/Symposium Publications</h4>
                     <div class="card mb-3">
@@ -659,55 +709,12 @@
 
 
             <!-- Preprints -->
-            <div class="px-4 py-2 row justify-content-md-center" id="preprints">
+            <!-- <div class="px-4 py-2 row justify-content-md-center" id="preprints">
                 <div class="col col-md-9 px-5">
                     <h2>Preprints</h2>
 
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Extremely Simple Activation Shaping for Out-of-Distribution Detection
-                                    </h5>
-                                    Andrija Djurisic,
-                                    Nebojsa Bozanic,
-                                    <strong>Arjun Ashok</strong>,
-                                    <a href="http://rosanneliu.com/">Rosanne Liu</a>
-                                    <br>
-                                    <!-- Preprint to be out soon,  -->
-                                    Preprint, <span style="text-decoration: underline;">Under Review</span> at <a href="https://iclr.cc/Conferences/2023">ICLR 2023</a>
-                                    <br>
-                                    <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldrASH" role="button" aria-expanded="false" aria-controls="tldrASH">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#absASH" role="button" aria-expanded="false" aria-controls="absASH">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2209.09858">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://andrijazz.github.io/ash/">Project Page</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/andrijazz/ash">Code</a>
-                                    </p>
-                                    <div class="collapse" id="tldrASH">
-                                        <div class="card card-body" align="justify">
-                                            We develop an extremely simple, post hoc, on-the-fly, and plug-and-play activation shaping method for out-of-distribution detection. 
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="absASH">
-                                        <div class="card card-body" align="justify">
-                                            The separation between training and deployment of machine learning models implies that not all scenarios encountered in deployment can be anticipated during training, and therefore relying solely on advancements in training has its limits. Out-of-distribution (OOD) detection is an important area that stress-tests a model's ability to handle unseen situations: Do models know when they don't know? Existing OOD detection methods either incur extra training steps, additional data or make nontrivial modifications to the trained network. In contrast, in this work, we propose an extremely simple, post-hoc, on-the-fly activation shaping method, ASH, where a large portion (e.g. 90%) of a sample's activation at a late layer is removed, and the rest (e.g. 10%) simplified or lightly adjusted. The shaping is applied at inference time, and does not require any statistics calculated from training data. Experiments show that such a simple treatment enhances in-distribution and out-of-distribution sample distinction so as to allow state-of-the-art OOD detection on ImageNet, and does not noticeably deteriorate the in-distribution accuracy. We release alongside the paper two calls for explanation and validation, believing the collective power to further validate and understand the discovery.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+            </div> -->
 
             <!-- Hackathons start here  -->
             <div class="px-4 py-2 row justify-content-md-center" id="hackathons">

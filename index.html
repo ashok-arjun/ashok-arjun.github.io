@@ -121,7 +121,7 @@
 <a href="https://mila.quebec/en/" target="_blank">MILA-Quebec AI Institute</a> and <a href="https://www.irina-lab.ai/about">CERC-AAI, Université de Montréal</a> advised by <a href="https://sites.google.com/view/irinarish/" target="_blank">Irina Rish</a> and <a href="https://www.alexdrouin.com/" target="_blank">Alexandre Drouin</a>. At ServiceNow, I also work closely with <a href="https://www.servicenow.com/research/author/etienne-marcotte.html" target="_blank">Étienne Marcotte</a>, <a href="https://www.servicenow.com/research/author/valentina-zantedeschi.html" target="_blank">Valentina Zantedeschi</a> and <a href="https://www.servicenow.com/research/author/nicolas-chapados.html" target="_blank">Nicolas Chapados</a>.
                         <!-- </span><br><br>  -->
                         My current research interests are in <b>time series forecasting</b> and <b>decision-making</b>, with a focus on <b>designing scalable general-purpose models</b> for
-                        time series prediction.
+                        time series prediction tasks (forecasting, interpolation, imputation etc).
 
                         <!-- I am currently a Research Engineering Intern at <a href="https://dubverse.ai/" target="_blank">Dubverse</a>. I am also a <b>research assistant</b> at 
                         <a target="_blank" href="https://www.iith.ac.in/">IIT Hyderabad</a> supervised by
@@ -312,6 +312,12 @@
                     <table class="table">
                         <tbody>
                             <tr>
+                                <td><b>Feb&nbsp;'24</b></td>
+                                <td>The full version of <a href="https://time-series-foundation-models.github.io/lag-llama.pdf" target="_blank">Lag-Llama</a> released with open-source model checkpoints! Lag-Llama is the first open-source foundation model for time-series forecasting. Check the announcement <a href="https://twitter.com/arjunashok37/status/1755261111233114165" target="_blank">here!</a>
+                                </td>
+                            </tr>
+
+                            <tr>
                                 <td><b>Jan&nbsp;'24</b></td>
                                 <td>I gave a talk on our efforts Towards General-Purpose Models for Time-Series Prediction at the <a href="https://www.meetup.com/montreal-time-series-meetup/events/298305168/">Winter 2024 Montreal Time Series Meetup</a>.
                                 </td>
@@ -467,22 +473,22 @@
                                     <h5 class="card-title">
                                         Lag-Llama: Towards Foundation Models for Time Series Forecasting
                                     </h5>
-                                    Kashif Rasul, <strong>Arjun Ashok</strong>, Andrew Robert Williams, Arian Khorasani, George Adamopoulos, Rishika Bhagwatkar, Marin Biloš, Hena Ghonia, Nadhir Vincent Hassen, Anderson Schneider, Sahil Garg, Alexandre Drouin, Nicolas Chapados, Yuriy Nevmyvaka, Irina Rish
+                                    Kashif Rasul*, <strong>Arjun Ashok</strong>*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish <br> (* Co-first authorship, equal contribution, order arbitrary)
                                     <br>
                                     <span style="text-decoration: underline;">Preprint</span>. Preliminary work presented at <a href="https://sites.google.com/view/r0-fomo" target="_blank">NeurIPS 2023 Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models</a>
                                     <p>
                                         <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_lagllama" role="button" aria-expanded="false" aria-controls="tldr_lagllama">TL;DR</a>
                                         <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_lagllama" role="button" aria-expanded="false" aria-controls="abs_lagllama">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2310.08278">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://time-series-foundation-models.github.io/lag-llama.pdf">Paper</a>
                                     </p>
                                     <div class="collapse" id="tldr_lagllama">
                                         <div class="card card-body" align="justify">
-                                            Strong general-purpose univariate probabilistic time-series forecasting model, with power-law analysis to predict the model's scaling behavior
+                                            A foundation model for probabilistic time series forecasting with strong zero-shot and few-shot capabilities
                                         </div>
                                     </div>
                                     <div class="collapse" id="abs_lagllama">
                                         <div class="card card-body" align="justify">
-                                            Aiming to build foundation models for time-series forecasting and study their scaling behavior, we present here our work-in-progress on Lag-Llama, a general-purpose univariate probabilistic time-series forecasting model trained on a large collection of time-series data. The model shows good zero-shot prediction capabilities on unseen "out-of-distribution" time-series datasets, outperforming supervised baselines. We use smoothly broken power-laws to fit and predict model scaling behavior.
+                                        Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.
                                         </div>
                                     </div>
                                     

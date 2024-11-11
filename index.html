@@ -100,15 +100,11 @@
 
                         <!-- <span style="color:darkred"> -->
                             I am a Visiting Researcher (Full-Time) at <a href="https://www.servicenow.com/research/" target="_blank">ServiceNow Research</a>, Montreal and a PhD student at 
-<a href="https://mila.quebec/en/" target="_blank">MILA-Quebec AI Institute</a> and <a href="https://www.irina-lab.ai/about">CERC-AAI, Université de Montréal</a> advised by <a href="https://sites.google.com/view/irinarish/" target="_blank">Irina Rish</a> and <a href="https://www.alexdrouin.com/" target="_blank">Alexandre Drouin</a>.                 
-                        My current research interests are in time series forecasting and decision-making, with a focus on designing scalable general-purpose models for
-                        time series prediction tasks (forecasting, interpolation, imputation etc).
-
+<a href="https://mila.quebec/en/" target="_blank">MILA-Quebec AI Institute</a> and <a href="https://www.irina-lab.ai/about">Université de Montréal</a> advised by <a href="https://sites.google.com/view/irinarish/" target="_blank">Irina Rish</a> and <a href="https://www.alexdrouin.com/" target="_blank">Alexandre Drouin</a>. My research interests are in time series forecasting.
                     </p>
 
                     <p align="justify">
-                        My email address is arjun.ashok [at] servicenow [dot] com. 
-                        I'd love to connect and chat with you if we have shared interests, be it in <a href="https://ashok-arjun.github.io/#preprints" target="_blank">research</a> or <a href="https://ashok-arjun.github.io/#music" target="_blank">music</a> or anything else. Please shoot me an email if you'd like to connect!
+                        My email address is arjun.ashok [at] servicenow [dot] com. Email me if you'd like to connect, be it about <a href="#preprints" target="_blank">research</a> or <a href="#music" target="_blank">music</a> or anything else!
                     </p>
 
                 </div>
@@ -132,6 +128,12 @@
                     <h2>News</h2>
                     <table class="table">
                         <tbody>
+
+                            <tr>
+                                <td><b>Oct&nbsp;'24</b></td>
+                                <td>Paper on natural-language based context-aware forecasting, <a href="https://arxiv.org/abs/2410.18959" target="_blank">Context is Key: A Benchmark for Forecasting with Essential Textual Information</a>, is out on arXiv.
+                                </td>
+                            </tr>
 
                             <tr>
                                 <td><b>Sep&nbsp;'24</b></td>
@@ -163,17 +165,18 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <td><b>Jan&nbsp;'24</b></td>
-                                <td>TACTiS-2 accepted at ICLR 2024!
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
                     <!-- Fill with old news -->
                     <div class="collapse" id="news_more">
                     <table class="table">
                         <tbody>
+
+                            <tr>
+                                <td><b>Jan&nbsp;'24</b></td>
+                                <td>TACTiS-2 accepted at ICLR 2024!
+                                </td>
+                            </tr>
 
 
                             <tr>
@@ -262,6 +265,49 @@
             <div class="px-4 py-2 row justify-content-md-center" id="preprints">
                 <div class="col col-md-9 px-5">
                     <h2>Latest Papers</h2>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Context is Key: A Benchmark for Forecasting with Essential Textual Information
+                                    </h5>
+                                    <strong>Arjun Ashok*</strong>,
+                                    Andrew Robert Williams*, Étienne Marcotte, Valentina Zantedeschi, Jithendaraa Subramanian, Roland Riachi, James Requeima, Alexandre Lacoste, Irina Rish, Nicolas Chapados, Alexandre Drouin <br> (* Co-first authorship)
+                                    <br>
+                                    <span style="text-decoration: underline;">Preprint</span>
+                                    <br>
+                                    <p>                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_cik" role="button" aria-expanded="false" aria-controls="tldr_cik">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_cik" role="button" aria-expanded="false" aria-controls="abs_cik">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2410.18959">arXiv</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/ServiceNow/context-is-key-forecasting">Code</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://servicenow.github.io/context-is-key-forecasting/">Benchmark Visualization</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://x.com/arjunashok37/status/1851360656995287065">Tweet</a>
+                                    </p>
+                                    <div class="collapse" id="tldr_cik">
+                                        <div class="card card-body" align="justify">
+                                            A forecasting benchmark with problems that require the combined use of numerical historical data and textual context.
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="abs_cik">
+                                        <div class="card card-body" align="justify">
+                                            Forecasting is a critical task in decision making across various domains. While numerical data provides a foundation, it often lacks crucial context necessary for accurate predictions. Human forecasters frequently rely on additional information, such as background knowledge or constraints, which can be efficiently communicated through natural language. However, the ability of existing forecasting models to effectively integrate this textual information remains an open question. To address this, we introduce "Context is Key" (CiK), a time series forecasting benchmark that pairs numerical data with diverse types of carefully crafted textual context, requiring models to integrate both modalities. We evaluate a range of approaches, including statistical models, time series foundation models, and LLM-based forecasters, and propose a simple yet effective LLM prompting method that outperforms all other tested methods on our benchmark. Our experiments highlight the importance of incorporating contextual information, demonstrate surprising performance when using LLM-based forecasting models, and also reveal some of their critical shortcomings. By presenting this benchmark, we aim to advance multimodal forecasting, promoting models that are both accurate and accessible to decision-makers with varied technical expertise. The benchmark can be visualized at <a href="https://servicenow.github.io/context-is-key-forecasting/">https://servicenow.github.io/context-is-key-forecasting/</a>.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                     <div class="card mb-3">
                         <div class="row g-0">
                             <!-- <div class="col-md-4 text-center my-4 px-2">
@@ -318,7 +364,7 @@
                                     <h5 class="card-title">
                                         Lag-Llama: Towards Foundation Models for Time Series Forecasting
                                     </h5>
-                                    <strong>Arjun Ashok</strong>*, Kashif Rasul*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish <br> (* Co-first authorship, equal contribution, order arbitrary)
+                                    <strong>Arjun Ashok</strong>*, Kashif Rasul*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish <br> (* Co-first authorship)
                                     <br>
                                     <span style="text-decoration: underline;">Preprint</span>. Preliminary work presented at <a href="https://sites.google.com/view/r0-fomo" target="_blank">NeurIPS 2023 Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models</a>
                                     <p>
@@ -374,15 +420,15 @@
                         <tbody>
                             <tr>
                                 <div class="image_container" width="33%">
-                                <td>I am a <a href="https://en.wikipedia.org/wiki/Carnatic_music">Carnatic</a> Vocalist and a student of Vidwan <a href="https://en.wikipedia.org/wiki/Bharat_Sundar" target="_blank">Bharat Sundar</a>. I have performed Carnatic concerts in multiple venues in India, and continue to perform in and around Montréal regularly. <a href="https://youtu.be/8Guc2xVOKNA?si=tMdUfGHbzyxmCR-q" target="_blank">Here</a> is a recording of a concert of mine from July 2024.
+                                <td>I am a <a href="https://en.wikipedia.org/wiki/Carnatic_music">Carnatic</a> Vocalist and a student of Vidwan <a href="https://en.wikipedia.org/wiki/Bharat_Sundar" target="_blank">Bharat Sundar</a>. I have performed Carnatic concerts in multiple venues in India, and continue to perform in and around Montréal and Ottawa regularly. <a href="https://youtu.be/8Guc2xVOKNA?si=tMdUfGHbzyxmCR-q" target="_blank">Here</a> is a recording of a concert of mine from July 2024.
                                     </td>
                                 </div>
                                 <div class="image_container" width="33%">
-                                <td><img width="100%" src="images/carnatic/may2022.jpeg"><br><center><small>May 2022</small></center></td>
+                                <td><img width="100%" src="images/carnatic/may2022.jpeg"><br><center><small>From a concert performed in May 2022</small></center></td>
                                 </div>
-                                <div class="image_container" width="33%">
+                                <!-- <div class="image_container" width="33%">
                                 <td><img width="100%" src="images/carnatic/jan2019.jpeg"><br><center><small>Jan 2019</small></center></td>
-                                </div>
+                                </div> -->
                             </tr>
                         </tbody>
                     </table>
@@ -409,7 +455,7 @@
                 
                     <ul>
                         <li>Co-organizing the <a href="https://neurips-time-series-workshop.github.io/" target="_blank">The first NeurIPS workshop on Time Series in the Age of Large Models</a> at NeurIPS 2024.</li>
-                        <li>Served as a reviewer at several conferences and journals: ICLR 2024, NeurIPS 2023, AISTATS 2022, AISTATS 2021, CVPR 2022, CVPR 2021, TMLR, TPAMI.</li>
+                        <li>Served as a reviewer at: ICLR 2025, ICLR 2024, NeurIPS 2023, AISTATS 2022, AISTATS 2021, CVPR 2022, CVPR 2021, TMLR, TPAMI.</li>
                         <li>Organized the ICLR 2024 Time Series Meetup in Vienna in May 2024.</li>
                     </ul>
                 </div>

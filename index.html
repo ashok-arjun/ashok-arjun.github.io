@@ -136,6 +136,13 @@
                         <tbody>
 
                             <tr>
+                                <td><b>Aug&nbsp;'25</b></td>
+                                <td>One <a href="https://arxiv.org/abs/2508.09904" target="_blank">paper</a> out on arXiv,  on strategies for improved zero-shot context-aided forecasting with LLMs.
+                                </td>
+                                
+                            </tr>
+
+                            <tr>
                                 <td><b>May&nbsp;'25</b></td>
                                 <td><a href="https://arxiv.org/abs/2410.18959" target="_blank">Context is Key</a> is accepted for publication at <a href="http://icml.cc">ICML 2025</a>. Another <a href="https://openreview.net/forum?id=UyVsNGlZyn" target="_blank">paper</a> accepted at the workshop on <a href="https://icml-structured-fm-workshop.github.io/">Foundation Models for Structured Data</a>.
                                 </td>
@@ -303,6 +310,46 @@
                                 <center>
                                 <div class="card-body">
                                     <h5 class="card-title">
+                                        Beyond Naïve Prompting: Strategies for Improved Zero-shot Context-aided Forecasting with LLMs
+                                    </h5>
+                                    <strong>Arjun Ashok</strong>,
+                                    Andrew Robert Williams, Vincent Zhihao Zheng, Irina Rish, Nicolas Chapados, Étienne Marcotte, Valentina Zantedeschi, Alexandre Drouin
+                                    <br>
+                                    <b>Preprint; under review</b>.
+                                    <br>
+                                    <p>                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_cik" role="button" aria-expanded="false" aria-controls="tldr_cik">TL;DR</a>
+                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_cik" role="button" aria-expanded="false" aria-controls="abs_cik">Abstract</a>
+                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2508.09904">arXiv</a>
+                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://github.com/ServiceNow/context-is-key-forecasting">Code</a> -->
+                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://servicenow.github.io/context-is-key-forecasting/">Benchmark Visualization</a> -->
+                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://x.com/arjunashok37/status/1851360656995287065">Tweet</a> -->
+                                    </p>
+                                    <div class="collapse" id="tldr_cik">
+                                        <div class="card card-body" align="justify">
+                                            We introduce four complementary strategies to perform zero-shot context-aided forecasting with LLMs which offer different benefits over naïve direct prompting (DP), improving interpretability, performance and resource efficiency.
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="abs_cik">
+                                        <div class="card card-body" align="justify">
+                                            Forecasting in real-world settings requires models to integrate not only historical data but also relevant contextual information, often available in textual form. While recent work has shown that large language models (LLMs) can be effective context-aided forecasters via naïve direct prompting, their full potential remains underexplored. We address this gap with 4 strategies, providing new insights into the zero-shot capabilities of LLMs in this setting. ReDP improves interpretability by eliciting explicit reasoning traces, allowing us to assess the model's reasoning over the context independently from its forecast accuracy. CorDP leverages LLMs solely to refine existing forecasts with context, enhancing their applicability in real-world forecasting pipelines. IC-DP proposes embedding historical examples of context-aided forecasting tasks in the prompt, substantially improving accuracy even for the largest models. Finally, RouteDP optimizes resource efficiency by using LLMs to estimate task difficulty, and routing the most challenging tasks to larger models. Evaluated on different kinds of context-aided forecasting tasks from the CiK benchmark, our strategies demonstrate distinct benefits over naïve prompting across LLMs of different sizes and families. These results open the door to further simple yet effective improvements in LLM-based context-aided forecasting.
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <!-- <div class="col-md-4 text-center my-4 px-2">
+                                <img src="images/papers/compositional.png" width="100%" height="100%">
+                            </div> -->
+                            <div class="col-md-12 my-4">
+                                <center>
+                                <div class="card-body">
+                                    <h5 class="card-title">
                                         Context is Key: A Benchmark for Forecasting with Essential Textual Information
                                     </h5>
                                     <strong>Arjun Ashok*</strong>,
@@ -409,9 +456,9 @@
                                     <strong>Arjun Ashok</strong>*, Kashif Rasul*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish <br> (* Co-first authorship)
                                     <br>
 
-                                    <b>arXiv Preprint</b>.
+                                    <!-- <b>arXiv Preprint</b>. -->
                                     <!-- <span style="text-decoration: underline;">Published at </span> -->
-                                    <br>
+                                    <!-- <br> -->
                                     <span style="text-decoration: underline;">Workshop Presentations:</span><br>
 
                                     <!-- <span style="text-decoration: underline;">Preprint</span>.  -->

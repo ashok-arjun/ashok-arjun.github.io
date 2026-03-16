@@ -32,7 +32,7 @@
         <!-- Custom Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
         <!-- Bootstrap CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -68,7 +68,7 @@
                                 <a class="nav-link" href="#news">News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#preprints">Latest Papers</a>
+                                <a class="nav-link" href="#preprints">Selected Papers</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#publications">Previous Work</a>
@@ -93,19 +93,32 @@
             <!-- About Me -->
             <div class="px-4 mt-5 row justify-content-md-center" id="about"> 
                 <div class="col col-md-6 px-5">
-                    <p align="justify">
-                        <h1><b>Arjun</b> Ashok</h1>
+                    <p>
+                        <h1>Arjun Ashok</h1>
                     </p>
-                    <p align="justify">
-
-                        <!-- <span style="color:darkred"> -->
-                            I am a Visiting Researcher (Full-Time) at <a href="https://www.servicenow.com/research/" target="_blank">ServiceNow Research</a>, Montreal, Canada and a PhD student at 
-<a href="https://mila.quebec/en/" target="_blank">MILA-Quebec AI Institute</a> and <a href="https://www.irina-lab.ai/about">Université de Montréal</a> advised by <a href="https://sites.google.com/view/irinarish/" target="_blank">Irina Rish</a> and <a href="https://www.alexdrouin.com/" target="_blank">Alexandre Drouin</a>. My research interests are in time series forecasting. My current work focuses on integrating unstructured contextual information into forecasting algorithms, to enable more accurate forecasts and to support more complex tasks beyond traditional forecasting (such as scenario planning).
-<!--                         My current work focuses on integrating unstructured contextual information into forecasting algorithms, to allow for more accurate forecasts and enable more complex tasks beyond traditional forecasting such as scenario planning. -->
+                    <p>
+                        I am a Student Researcher at Google Cloud AI Research in the San Francisco Bay Area, and a third-year PhD student at
+                        <a href="https://mila.quebec/en/" target="_blank">MILA-Quebec AI Institute</a> and <a href="https://www.irina-lab.ai/about">Université de Montréal</a> advised by <a href="https://sites.google.com/view/irinarish/" target="_blank">Irina Rish</a> and <a href="https://www.alexdrouin.com/" target="_blank">Alexandre Drouin</a>.
                     </p>
 
-                    <p align="justify">
-                        My email address is arjun.ashok.psg [at] gmail [dot] com. Email me if you'd like to connect! 
+                    <p>
+                        My research interests are in time series forecasting, specifically in building flexible models. Some of my notable contributions include making transformer architectures faster and better for forecasting tasks (<a href="https://arxiv.org/abs/2310.01327" target="_blank">TACTiS-2</a>), building some of the early foundation models in this space (<a href="https://time-series-foundation-models.github.io/lag-llama.pdf" target="_blank">Lag-Llama</a>), developing methods and benchmarks for textual-context aided forecasting (<a href="https://arxiv.org/abs/2410.18959" target="_blank">CiK</a>, <a href="https://arxiv.org/abs/2508.09904" target="_blank">Beyond DP</a>), and building post-training data pipelines to adapt LLMs for multimodal forecasting.
+                    </p>
+
+                    <p>
+                        Prior to Google, I spent three years at <a href="https://www.servicenow.com/research/" target="_blank">ServiceNow Research</a> in Montreal, where I worked on forecasting research published at top-tier venues. Earlier, I interned at <a href="https://research.ibm.com/" target="_blank">IBM Research</a> and <a href="https://dubverse.ai/" target="_blank">dubverse.ai</a> during my undergraduate studies.
+                    </p>
+
+                    <p>
+                        To shape the evolving discourse around foundation models for forecasting, I led the organization of a successful first edition of the <a href="https://neurips-time-series-workshop.github.io/" target="_blank">Time Series in the Age of Large Models</a> workshop at NeurIPS 2024 (1000+ attendees), with a second edition now to be organized at ICLR 2026.
+                    </p>
+
+                    <p>
+                        I also consult for startups and advise students on forecasting research. Reach out if either applies.
+                    </p>
+
+                    <p>
+                        My email address is arjun.ashok.psg [at] gmail [dot] com.
 <!--         , be it about <a href="#preprints" target="_blank">research</a> or <a href="#music" target="_blank">music</a> or anything else! -->
                     </p>
 
@@ -116,9 +129,12 @@
                 </div>
                 <div class="col col-md-3">
                     <br><br>
-                    <img src="images/Arjun_Ashok_NeurIPS_2024.jpeg" style="max-width: 100%; height: auto; max-height: 250px;" class="img-fluid" alt="Descriptive Alt Text">
+                    <figure style="display: table;">
+                        <img src="images/Arjun_Ashok_NeurIPS_2024.jpeg" style="max-width: 100%; height: auto; max-height: 250px; display: block;" class="img-fluid" alt="Descriptive Alt Text">
+                        <figcaption class="text-muted mt-2" style="font-size: 0.75rem; display: table-caption; caption-side: bottom;">Photo from NeurIPS 2024, Vancouver - opening the first Time Series in the Age of Large Models workshop.</figcaption>
+                    </figure>
                 </div>
-                <div align="center" style="font-size: 24px;">
+                <div align="center">
                     <a href="https://scholar.google.com/citations?hl=en&user=4ur98b4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar contact-icon" aria-hidden="true"></i></a>
                     <a href="https://x.com/arjunashok37" target="_blank"><i class="fa fa-twitter contact-icon" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/arjun-ashok-psg/" target="_blank"><i class="fa fa-linkedin contact-icon" aria-hidden="true"></i></a>
@@ -132,32 +148,53 @@
             <div class="px-4 py-2 row justify-content-md-center" id="news">
                 <div class="col col-md-9 px-5">
                     <h2>News</h2>
-                    <table class="table">
+                    <p class="text-muted" style="font-size: 0.9rem;">This is likely not up-to-date. I tend to post updates more often on <a href="https://www.linkedin.com/in/arjun-ashok-psg/" target="_blank">LinkedIn</a> these days.</p>
+                    <table class="table table-borderless" style="font-size: 0.9rem;">
                         <tbody>
 
                             <tr>
-                                <td><b>Aug&nbsp;'25</b></td>
+                                <td class="text-muted">Feb&nbsp;'26</td>
+                                <td>Started as a Student Researcher at <a href="https://research.google/" target="_blank">Google Cloud AI Research</a> in the San Francisco Bay Area.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-muted">Jan&nbsp;'26</td>
+                                <td>Co-organizing the <a href="https://neurips-time-series-workshop.github.io/" target="_blank">Time Series in the Age of Large Models</a> workshop at ICLR 2026 - second edition overall, first time at ICLR.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-muted">Aug&nbsp;'25</td>
                                 <td>One <a href="https://arxiv.org/abs/2508.09904" target="_blank">paper</a> out on arXiv,  on strategies for improved zero-shot context-aided forecasting with LLMs.
                                 </td>
-                                
+
                             </tr>
 
                             <tr>
-                                <td><b>May&nbsp;'25</b></td>
+                                <td class="text-muted">May&nbsp;'25</td>
                                 <td><a href="https://arxiv.org/abs/2410.18959" target="_blank">Context is Key</a> is accepted for publication at <a href="http://icml.cc">ICML 2025</a>. Another <a href="https://openreview.net/forum?id=UyVsNGlZyn" target="_blank">paper</a> accepted at the workshop on <a href="https://icml-structured-fm-workshop.github.io/">Foundation Models for Structured Data</a>.
                                 </td>
-                                
+
                             </tr>
 
+                        </tbody>
+                    </table>
+                    <!-- Fill with old news -->
+                    <div class="collapse" id="news_more">
+                    <table class="table table-borderless" style="font-size: 0.9rem;">
+                        <tbody>
+
+
                             <tr>
-                                <td><b>Dec&nbsp;'24</b></td>
+                                <td class="text-muted">Dec&nbsp;'24</td>
                                 <td>Co-organized <a href="https://neurips-time-series-workshop.github.io/" target="_blank">The first NeurIPS workshop on Time Series in the Age of Large Models</a> at NeurIPS 2024 in Vancouver, Canada, with 1000+ attendees. Checkout all the papers and talks from the workshop <a href="https://neurips-time-series-workshop.github.io/" target="_blank">here</a>.
                                 </td>
                                 
                             </tr>
 
                             <tr>
-                                <td><b>Oct-Nov&nbsp;'24</b></td>
+                                <td class="text-muted">Oct-Nov&nbsp;'24</td>
                                 <td>Paper on natural-language based context-aware forecasting, <a href="https://arxiv.org/abs/2410.18959" target="_blank">Context is Key: A Benchmark for Forecasting with Essential Textual Information</a>, is out on arXiv. Gave an oral presentation at the <a href="https://sites.google.com/view/fm4ts/home" target="_blank">FM4TS</a> Workshop at <a href="https://ai-finance.org/">ACM ICAIF 2024</a>, New York, USA.
                                 </td>
                                 
@@ -176,97 +213,90 @@
                             </tr> -->
 
                             <tr>
-                                <td><b>July&nbsp;'24</b></td>
+                                <td class="text-muted">July&nbsp;'24</td>
                                 <td>Gave an invited talk on Natural Language based Context-Aware Forecasting at the <a href="https://isf.forecasters.org/" target="_blank">International Symposium on Forecasting (ISF) 2024</a>.
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td><b>May&nbsp;'24</b></td>
+                                <td class="text-muted">May&nbsp;'24</td>
                                 <td>Presented TACTiS-2 at ICLR 2024. TACTiS-2 is a highly flexible model for multivariate probabilistic time series prediction tasks. Check out the tweet thread and poster <a href="https://x.com/arjunashok37/status/1787045322671210600" target="_blank">here</a>!
                                 </td>
                             </tr>
                 
                             <tr>
-                                <td><b>Feb&nbsp;'24</b></td>
+                                <td class="text-muted">Feb&nbsp;'24</td>
                                 <td>The full version of <a href="https://time-series-foundation-models.github.io/lag-llama.pdf" target="_blank">Lag-Llama</a> released with open-source model checkpoints! Check the announcement <a href="https://twitter.com/arjunashok37/status/1755261111233114165" target="_blank">here</a>!
                                 </td>
                             </tr>
 
-                        </tbody>
-                    </table>
-                    <!-- Fill with old news -->
-                    <div class="collapse" id="news_more">
-                    <table class="table">
-                        <tbody>
-
 
                             <tr>
-                                <td><b>Jan&nbsp;'24</b></td>
+                                <td class="text-muted">Jan&nbsp;'24</td>
                                 <td>I gave a talk on our efforts Towards General-Purpose Models for Time-Series Prediction at the <a href="https://www.meetup.com/montreal-time-series-meetup/events/298305168/">Winter 2024 Montreal Time Series Meetup</a>.
                                 </td>
                             </tr>
 
                             <tr>
-                                <td><b>Jan&nbsp;'24</b></td>
+                                <td class="text-muted">Jan&nbsp;'24</td>
                                 <td>TACTiS-2 accepted at ICLR 2024!
                                 </td>
                             </tr>
 
 
                             <tr>
-                                <td><b>Dec&nbsp;'23</b></td>
+                                <td class="text-muted">Dec&nbsp;'23</td>
                                 <td>I gave a talk on Building Foundation Models for Time Series Data at the <a href="https://sites.google.com/mila.quebec/6thnslw-no/home?authuser=0" target="_blank">6th workshop on Neural Scaling Laws</a> co-located with NeurIPS 2023.
                                 </td>
                             </tr>
                             
                             <tr>
-                                <td><b>Oct&nbsp;'23</b></td>
+                                <td class="text-muted">Oct&nbsp;'23</td>
                                 <td>TACTiS-2 is out on arXiv.
                                 </td>
                             </tr>
 
                             <tr>
-                                <td><b>Oct&nbsp;'23</b></td>
+                                <td class="text-muted">Oct&nbsp;'23</td>
                                 <td>A preliminary version of Lag-Llama is out on arXiv.
                                 </td>
                             </tr>
 
                             <tr>
-                                <td><b>Jan '23</b></td>
+                                <td class="text-muted">Jan '23</td>
                                 <td>One <a href="https://arxiv.org/abs/2209.09858" target="_blank">paper</a> on out-of-distribution detection <span style="text-decoration: underline;">accepted</span> to ICLR 2023. This is work in collaboration with folks at <a href="https://mlcollective.org" target="_blank">ML Collective</a> mentored by <a href="https://rosanneliu.com" target="_blank">Rosanne Liu</a>.
                                 </td>
                             </tr>
                             <tr>
-                                <td><b>Jan '23</b></td>
+                                <td class="text-muted">Jan '23</td>
                                 <td>Started as a Visiting Researcher (Full-Time) at ServiceNow Research, Montreal. Excited to continue working on problems in time series representation learning!
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><b>Aug '22</b></td>
+                                <td class="text-muted">Aug '22</td>
                                 <td>Preliminary <a href="preprints/SSL_Weather_AAAISym22.pdf" target="_blank">work</a> on self-supervised learning objectives for weather time series <span style="text-decoration: underline;">accepted</span> at the <a href="https://sites.google.com/view/clvision2022/overview?authuser=0">AAAI 2022 Fall Symposium on Climate Change</a>. 
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><b>Jul '22</b></td>
+                                <td class="text-muted">Jul '22</td>
                                 <td>One <a href="papers/AshokECCV2022.pdf" target="_blank">paper</a> on Class-Incremental Learning <span style="text-decoration: underline;">accepted</span> as a full paper at <a href="https://eccv2022.ecva.net" target="_blank" style="text-decoration: none"><span>ECCV 2022</span></a>.</td>
                             </tr>
                             <tr>
-                                <td><b>Jun '22</b></td>
+                                <td class="text-muted">Jun '22</td>
                                 <td>Started as a Research Intern at IBM Research, India. I'll be working on building self-supervised learning objectives and pre-trained models for geospatial weather time series.</td>
                             </tr>
                             <tr>
-                                <td><b>Jun '22</b></td>
+                                <td class="text-muted">Jun '22</td>
                                 <td>One <a href="https://arxiv.org/abs/2204.07705" target="_blank">paper</a> on cross-task generalization in NLP <span style="text-decoration: underline;">submitted</span> to EMNLP 2022 (Update: Accepted). 
                                 <!-- Check out our <a href="https://github.com/allenai/natural-instructions" target="_blank">repository</a> of language instructions for NLP tasks and the <a href="https://github.com/yizhongw/Tk-Instruct">code</a> for our experiments on cross-task generalization!</td> -->
                             </tr>
                             <tr>
-                                <td class="col-sm-2"><b>Apr '22</b></td>
+                                <td class="text-muted">Apr '22</td>
                                 <td>One <a target="_blank" href="papers/AshokCLVISION.pdf">paper</a> on Class-Incremental Learning <span style="text-decoration: underline;">accepted</span> at the <a href="https://sites.google.com/view/clvision2022/overview?authuser=0">CLVISION Workshop</a> at CVPR 2022 as a non-archival paper (Update: Accepted at ECCV 2022).
                                 </td>
                             </tr>
                             <tr>
-                                <td><b>Apr '22</b></td>
+                                <td class="text-muted">Apr '22</td>
                                 <td>One <a target="_blank" href="papers/AshokRescienceC.pdf">reproducibility report</a> on Self-Supervision and Few-shot Learning <span style="text-decoration: underline;">accepted</span> at the <a href="https://openreview.net/group?id=ML_Reproducibility_Challenge/2021/Fall">ML Reproducibility Challenge 2021 (Fall Edition)</a> and published at <a href="http://rescience.github.io">ReScience-C</a>.
                                 </td>
                             <!-- </tr>
@@ -276,12 +306,12 @@
                                 </td>
                             </tr> -->
                             <tr>
-                                <td><b>Oct '21</b></td>
+                                <td class="text-muted">Oct '21</td>
                                 <td>One <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21589">paper</a> on out-of-distribution generalization accepted as AAAI 2022 as a student abstract.
                                 </td>
                             </tr>
                             <tr>
-                                <td><b>Jun '21</b></td>
+                                <td class="text-muted">Jun '21</td>
                                 <td>Started as a Research Assistant at IIT Hyderabad under Prof. Vineeth Balasubramanian.
                                 </td>
                             </tr>
@@ -301,192 +331,126 @@
                 <div class="col col-md-9 px-5">
                     <h2>Selected Papers</h2>
 
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Beyond Naïve Prompting: Strategies for Improved Zero-shot Context-aided Forecasting with LLMs
-                                    </h5>
-                                    <strong>Arjun Ashok</strong>,
-                                    Andrew Robert Williams, Vincent Zhihao Zheng, Irina Rish, Nicolas Chapados, Étienne Marcotte, Valentina Zantedeschi, Alexandre Drouin
-                                    <br>
-                                    <b>Preprint; under review</b>.
-                                    <br>
-                                    <p>                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_cik" role="button" aria-expanded="false" aria-controls="tldr_cik">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_cik" role="button" aria-expanded="false" aria-controls="abs_cik">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2508.09904">arXiv</a>
-                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://github.com/ServiceNow/context-is-key-forecasting">Code</a> -->
-                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://servicenow.github.io/context-is-key-forecasting/">Benchmark Visualization</a> -->
-                                        <!-- <a class="btn btn-outline-primary" target="_blank" href="https://x.com/arjunashok37/status/1851360656995287065">Tweet</a> -->
-                                    </p>
-                                    <div class="collapse" id="tldr_cik">
-                                        <div class="card card-body" align="justify">
-                                            We introduce four complementary strategies to perform zero-shot context-aided forecasting with LLMs which offer different benefits over naïve direct prompting (DP), improving interpretability, performance and resource efficiency.
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="abs_cik">
-                                        <div class="card card-body" align="justify">
-                                            Forecasting in real-world settings requires models to integrate not only historical data but also relevant contextual information, often available in textual form. While recent work has shown that large language models (LLMs) can be effective context-aided forecasters via naïve direct prompting, their full potential remains underexplored. We address this gap with 4 strategies, providing new insights into the zero-shot capabilities of LLMs in this setting. ReDP improves interpretability by eliciting explicit reasoning traces, allowing us to assess the model's reasoning over the context independently from its forecast accuracy. CorDP leverages LLMs solely to refine existing forecasts with context, enhancing their applicability in real-world forecasting pipelines. IC-DP proposes embedding historical examples of context-aided forecasting tasks in the prompt, substantially improving accuracy even for the largest models. Finally, RouteDP optimizes resource efficiency by using LLMs to estimate task difficulty, and routing the most challenging tasks to larger models. Evaluated on different kinds of context-aided forecasting tasks from the CiK benchmark, our strategies demonstrate distinct benefits over naïve prompting across LLMs of different sizes and families. These results open the door to further simple yet effective improvements in LLM-based context-aided forecasting.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
+                    <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
+                        <div class="paper-title">
+                            Beyond Naïve Prompting: Strategies for Improved Context-aided Forecasting with LLMs
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            Arjun Ashok,
+                            Andrew Robert Williams, Vincent Zhihao Zheng, Irina Rish, Nicolas Chapados, Étienne Marcotte, Valentina Zantedeschi, Alexandre Drouin
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">Preprint; under review</div>
+                        <div class="mt-1" style="font-size: 0.9rem;">
+                            <a data-bs-toggle="collapse" href="#tldr_beyond" role="button" aria-expanded="false" aria-controls="tldr_beyond">TL;DR</a>
+                            &middot; <a data-bs-toggle="collapse" href="#abs_beyond" role="button" aria-expanded="false" aria-controls="abs_beyond">Abstract</a>
+                            &middot; <a target="_blank" href="https://arxiv.org/abs/2508.09904">arXiv</a>
+                        </div>
+                        <div class="collapse mt-2" id="tldr_beyond">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                We introduce a unified framework for context-aided time series forecasting that bridges the LLM 'execution gap,' boosts prediction accuracy by up to 50%, and significantly reduces inference costs through adaptive model routing
+                            </div>
+                        </div>
+                        <div class="collapse mt-2" id="abs_beyond">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                Real-world forecasting requires models to integrate not only historical data but also relevant contextual information provided in textual form. While large language models (LLMs) show promise for context-aided forecasting, critical challenges remain: we lack diagnostic tools to understand failure modes, performance remains far below their potential, and high computational costs limit practical deployment. We introduce a unified framework of four strategies that address these limitations along three orthogonal dimensions: model diagnostics, accuracy, and efficiency. Through extensive evaluation across model families from small open-source models to frontier models including Gemini, GPT, and Claude, we uncover both fundamental insights and practical solutions. Our findings span three key dimensions: diagnostic strategies reveal the “Execution Gap” where models correctly explain how context affects forecasts but fail to apply this reasoning; accuracy-focused strategies achieve substantial performance improvements of 25-50%; and efficiency-oriented approaches show that adaptive routing between small and large models can approach large model accuracy on average while significantly reducing inference costs. These orthogonal strategies can be flexibly integrated based on deployment constraints, providing practitioners with a comprehensive toolkit for practical LLM-based context-aided forecasting.
                             </div>
                         </div>
                     </div>
 
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Context is Key: A Benchmark for Forecasting with Essential Textual Information
-                                    </h5>
-                                    <strong>Arjun Ashok*</strong>,
-                                    Andrew Robert Williams*, Étienne Marcotte, Valentina Zantedeschi, Jithendaraa Subramanian, Roland Riachi, James Requeima, Alexandre Lacoste, Irina Rish, Nicolas Chapados, Alexandre Drouin <br> (* Co-first authorship)
-                                    <br>
-                                    <b>Accepted at <a href="http://icml.cc">ICML 2025</a></b>.
-                                    <br>
-                                    <span style="text-decoration: underline;">Workshop Presentations:</span>
-
-                                    <!-- <b></b> -->
-                                    <br>                                    <span>Poster Presentation at <a href="https://neurips-time-series-workshop.github.io/ target="_blank">NeurIPS 2024 Workshop on Time Series in the Age of Large Models</a>
-                                    </span><br>
-                                    <span>Oral Presentation at <a href="https://sites.google.com/view/fm4ts/home" target="_blank">ACM ICAIF 2024 Workshop on Foundation Models for Time Series: Exploring New Frontiers </a>
-                                    </span><br>
-                                    <span>Poster Presentation at <a href="http://montrealaisymposium.com/" target="_blank">Montreal AI Symposium 2024</a>
-                                    </span>
-                                    <br>
-                                    <p>                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_cik" role="button" aria-expanded="false" aria-controls="tldr_cik">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_cik" role="button" aria-expanded="false" aria-controls="abs_cik">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2410.18959">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/ServiceNow/context-is-key-forecasting">Code</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://servicenow.github.io/context-is-key-forecasting/">Benchmark Visualization</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://x.com/arjunashok37/status/1851360656995287065">Tweet</a>
-                                    </p>
-                                    <div class="collapse" id="tldr_cik">
-                                        <div class="card card-body" align="justify">
-                                            A forecasting benchmark with problems that require the combined use of numerical historical data and textual context.
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="abs_cik">
-                                        <div class="card card-body" align="justify">
-                                            Forecasting is a critical task in decision making across various domains. While numerical data provides a foundation, it often lacks crucial context necessary for accurate predictions. Human forecasters frequently rely on additional information, such as background knowledge or constraints, which can be efficiently communicated through natural language. However, the ability of existing forecasting models to effectively integrate this textual information remains an open question. To address this, we introduce "Context is Key" (CiK), a time series forecasting benchmark that pairs numerical data with diverse types of carefully crafted textual context, requiring models to integrate both modalities. We evaluate a range of approaches, including statistical models, time series foundation models, and LLM-based forecasters, and propose a simple yet effective LLM prompting method that outperforms all other tested methods on our benchmark. Our experiments highlight the importance of incorporating contextual information, demonstrate surprising performance when using LLM-based forecasting models, and also reveal some of their critical shortcomings. By presenting this benchmark, we aim to advance multimodal forecasting, promoting models that are both accurate and accessible to decision-makers with varied technical expertise. The benchmark can be visualized at <a href="https://servicenow.github.io/context-is-key-forecasting/">https://servicenow.github.io/context-is-key-forecasting/</a>.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
+                    <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
+                        <div class="paper-title">
+                            Context is Key: A Benchmark for Forecasting with Essential Textual Information
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            Arjun Ashok*, Andrew Robert Williams*, Étienne Marcotte, Valentina Zantedeschi, Jithendaraa Subramanian, Roland Riachi, James Requeima, Alexandre Lacoste, Irina Rish, Nicolas Chapados, Alexandre Drouin &nbsp;(* co-first authorship)
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            <a href="http://icml.cc">ICML 2025</a>
+                        </div>
+                        <div class="text-muted" style="font-size: 0.8rem; opacity: 0.7;">
+                            Also at: <a href="https://neurips-time-series-workshop.github.io/" target="_blank">NeurIPS 2024 TS Workshop</a> &middot;
+                            <a href="https://sites.google.com/view/fm4ts/home" target="_blank">ACM ICAIF 2024 FM4TS Workshop</a> &middot;
+                            <a href="http://montrealaisymposium.com/" target="_blank">Montreal AI Symposium 2024</a>
+                        </div>
+                        <div class="mt-1" style="font-size: 0.9rem;">
+                            <a data-bs-toggle="collapse" href="#tldr_cik" role="button" aria-expanded="false" aria-controls="tldr_cik">TL;DR</a>
+                            &middot; <a data-bs-toggle="collapse" href="#abs_cik" role="button" aria-expanded="false" aria-controls="abs_cik">Abstract</a>
+                            &middot; <a target="_blank" href="https://arxiv.org/abs/2410.18959">arXiv</a>
+                            &middot; <a target="_blank" href="https://github.com/ServiceNow/context-is-key-forecasting">Code</a>
+                            &middot; <a target="_blank" href="https://servicenow.github.io/context-is-key-forecasting/">Benchmark</a>
+                            &middot; <a target="_blank" href="https://x.com/arjunashok37/status/1851360656995287065">Tweet</a>
+                        </div>
+                        <div class="collapse mt-2" id="tldr_cik">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                A forecasting benchmark with problems that require the combined use of numerical historical data and textual context.
+                            </div>
+                        </div>
+                        <div class="collapse mt-2" id="abs_cik">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                Forecasting is a critical task in decision making across various domains. While numerical data provides a foundation, it often lacks crucial context necessary for accurate predictions. Human forecasters frequently rely on additional information, such as background knowledge or constraints, which can be efficiently communicated through natural language. However, the ability of existing forecasting models to effectively integrate this textual information remains an open question. To address this, we introduce "Context is Key" (CiK), a time series forecasting benchmark that pairs numerical data with diverse types of carefully crafted textual context, requiring models to integrate both modalities. We evaluate a range of approaches, including statistical models, time series foundation models, and LLM-based forecasters, and propose a simple yet effective LLM prompting method that outperforms all other tested methods on our benchmark. Our experiments highlight the importance of incorporating contextual information, demonstrate surprising performance when using LLM-based forecasting models, and also reveal some of their critical shortcomings. By presenting this benchmark, we aim to advance multimodal forecasting, promoting models that are both accurate and accessible to decision-makers with varied technical expertise. The benchmark can be visualized at <a href="https://servicenow.github.io/context-is-key-forecasting/">https://servicenow.github.io/context-is-key-forecasting/</a>.
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        TACTiS-2: Better, Faster, Simpler Attentional Copulas for Multivariate Time Series
-                                    </h5>
-                                    <strong>Arjun Ashok</strong>,
-                                    Étienne Marcotte, Valentina Zantedeschi, Nicolas Chapados, Alexandre Drouin
-                                    <br>
-                                    <b>Accepted at <a href="https://iclr.cc/Conferences/2024" target="_blank">ICLR 2024</a></b>.
-                                    <!-- <span style="text-decoration: underline;">Published at </span> -->
-                                    <br>
-                                    <span style="text-decoration: underline;">Workshop Presentations:</span><br>
-                                    <span>Oral Presentation at <a href="http://montrealaisymposium.com/" target="_blank">Montreal AI Symposium 2024</a>
-                                    </span>                        
-                                    <p>                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_tactis2" role="button" aria-expanded="false" aria-controls="tldr_tactis2">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_tactis2" role="button" aria-expanded="false" aria-controls="abs_tactis2">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://arxiv.org/abs/2310.01327">arXiv</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/ServiceNow/TACTiS">Code</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://openreview.net/forum?id=xtOydkE1Ku">OpenReview</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://x.com/arjunashok37/status/1787045322671210600">Tweet</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="posters/TACTIS_2_ICLR_2024_Poster.pdf">Poster</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://www.servicenow.com/blogs/2024/tactis-2-time-series-prediction">Blog</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://www.youtube.com/watch?v=ES34R-iGGVc">15-min Video</a>
-                                    </p>
-                                    <div class="collapse" id="tldr_tactis2">
-                                        <div class="card card-body" align="justify">
-                                            A flexible model for multivariate probabilistic time series prediction, simplifying the training of attentional copulas, with state-of-the-art accuracy on diverse forecasting tasks, while supporting interpolation and learning from irregular data.
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="abs_tactis2">
-                                        <div class="card card-body" align="justify">
-                                            We introduce a new model for multivariate probabilistic time series prediction, designed to flexibly address a range of tasks including forecasting, interpolation, and their combinations. Building on copula theory, we propose a simplified objective for the recently-introduced transformer-based attentional copulas (TACTiS), wherein the number of distributional parameters now scales linearly with the number of variables instead of factorially. The new objective requires the introduction of a training curriculum, which goes hand-in-hand with necessary changes to the original architecture. We show that the resulting model has significantly better training dynamics and achieves state-of-the-art performance across diverse real-world forecasting tasks, while maintaining the flexibility of prior work, such as seamless handling of unaligned and unevenly-sampled time series.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
+                    <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
+                        <div class="paper-title">
+                            TACTiS-2: Better, Faster, Simpler Attentional Copulas for Multivariate Time Series
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            Arjun Ashok, Étienne Marcotte, Valentina Zantedeschi, Nicolas Chapados, Alexandre Drouin
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            <a href="https://iclr.cc/Conferences/2024" target="_blank">ICLR 2024</a>
+                        </div>
+                        <div class="mt-1" style="font-size: 0.9rem;">
+                            <a data-bs-toggle="collapse" href="#tldr_tactis2" role="button" aria-expanded="false" aria-controls="tldr_tactis2">TL;DR</a>
+                            &middot; <a data-bs-toggle="collapse" href="#abs_tactis2" role="button" aria-expanded="false" aria-controls="abs_tactis2">Abstract</a>
+                            &middot; <a target="_blank" href="https://arxiv.org/abs/2310.01327">arXiv</a>
+                            &middot; <a target="_blank" href="https://github.com/ServiceNow/TACTiS">Code</a>
+                            &middot; <a target="_blank" href="https://openreview.net/forum?id=xtOydkE1Ku">OpenReview</a>
+                            &middot; <a target="_blank" href="posters/TACTIS_2_ICLR_2024_Poster.pdf">Poster</a>
+                            &middot; <a target="_blank" href="https://www.servicenow.com/blogs/2024/tactis-2-time-series-prediction">Blog</a>
+                            &middot; <a target="_blank" href="https://www.youtube.com/watch?v=ES34R-iGGVc">Video</a>
+                        </div>
+                        <div class="collapse mt-2" id="tldr_tactis2">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                A flexible model for multivariate probabilistic time series prediction, simplifying the training of attentional copulas, with state-of-the-art accuracy on diverse forecasting tasks, while supporting interpolation and learning from irregular data.
+                            </div>
+                        </div>
+                        <div class="collapse mt-2" id="abs_tactis2">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                We introduce a new model for multivariate probabilistic time series prediction, designed to flexibly address a range of tasks including forecasting, interpolation, and their combinations. Building on copula theory, we propose a simplified objective for the recently-introduced transformer-based attentional copulas (TACTiS), wherein the number of distributional parameters now scales linearly with the number of variables instead of factorially. The new objective requires the introduction of a training curriculum, which goes hand-in-hand with necessary changes to the original architecture. We show that the resulting model has significantly better training dynamics and achieves state-of-the-art performance across diverse real-world forecasting tasks, while maintaining the flexibility of prior work, such as seamless handling of unaligned and unevenly-sampled time series.
                             </div>
                         </div>
                     </div>
 
-
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <!-- <div class="col-md-4 text-center my-4 px-2">
-                                <img src="images/papers/compositional.png" width="100%" height="100%">
-                            </div> -->
-                            <div class="col-md-12 my-4">
-                                <center>
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        Lag-Llama: Towards Foundation Models for Time Series Forecasting
-                                    </h5>
-                                    <strong>Arjun Ashok</strong>*, Kashif Rasul*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish <br> (* Co-first authorship)
-                                    <br>
-
-                                    <!-- <b>arXiv Preprint</b>. -->
-                                    <!-- <span style="text-decoration: underline;">Published at </span> -->
-                                    <!-- <br> -->
-                                    <span style="text-decoration: underline;">Workshop Presentations:</span><br>
-
-                                    <!-- <span style="text-decoration: underline;">Preprint</span>.  -->
-                                    <!-- <br> -->
-                                    Poster Presentation at <a href="https://sites.google.com/view/r0-fomo" target="_blank">NeurIPS 2023 Workshop on Robustness of Few-shot and Zero-shot Learning in Foundation Models</a>
-                                    <p>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#tldr_lagllama" role="button" aria-expanded="false" aria-controls="tldr_lagllama">TL;DR</a>
-                                        <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#abs_lagllama" role="button" aria-expanded="false" aria-controls="abs_lagllama">Abstract</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://time-series-foundation-models.github.io/lag-llama.pdf">Paper</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://github.com/time-series-foundation-models/lag-llama">Code (1k+ ★)</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://huggingface.co/time-series-foundation-models/Lag-Llama">Weights</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://colab.research.google.com/drive/13HHKYL_HflHBKxDWycXgIUAHSeHRR5eo?usp=sharing">Demo</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://twitter.com/arjunashok37/status/1755261111233114165">Tweet</a>
-                                        <a class="btn btn-outline-primary" target="_blank" href="https://www.youtube.com/watch?v=Mf2FOzDPxck">15-min Video</a>
-                                    </p>
-                                    <div class="collapse" id="tldr_lagllama">
-                                        <div class="card card-body" align="justify">
-                                            A foundation model for probabilistic time series forecasting with strong zero-shot and few-shot capabilities
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="abs_lagllama">
-                                        <div class="card card-body" align="justify">
-                                        Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                </center>
+                    <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
+                        <div class="paper-title">
+                            Lag-Llama: Towards Foundation Models for Time Series Forecasting
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            Arjun Ashok*, Kashif Rasul*, Andrew Robert Williams, Hena Ghonia, Rishika Bhagwatkar, Arian Khorasani, Mohammad Javad Darvishi Bayazi, George Adamopoulos, Roland Riachi, Nadhir Hassen, Marin Biloš, Sahil Garg, Anderson Schneider, Nicolas Chapados, Alexandre Drouin, Valentina Zantedeschi, Yuriy Nevmyvaka, Irina Rish &nbsp;(* co-first authorship)
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            <a href="https://sites.google.com/view/r0-fomo" target="_blank">NeurIPS 2023 R0-FoMo Workshop</a>
+                        </div>
+                        <div class="mt-1" style="font-size: 0.9rem;">
+                            <a data-bs-toggle="collapse" href="#tldr_lagllama" role="button" aria-expanded="false" aria-controls="tldr_lagllama">TL;DR</a>
+                            &middot; <a data-bs-toggle="collapse" href="#abs_lagllama" role="button" aria-expanded="false" aria-controls="abs_lagllama">Abstract</a>
+                            &middot; <a target="_blank" href="https://time-series-foundation-models.github.io/lag-llama.pdf">Paper</a>
+                            &middot; <a target="_blank" href="https://github.com/time-series-foundation-models/lag-llama">Code</a>
+                            &middot; <a target="_blank" href="https://huggingface.co/time-series-foundation-models/Lag-Llama">Weights</a>
+                            &middot; <a target="_blank" href="https://colab.research.google.com/drive/13HHKYL_HflHBKxDWycXgIUAHSeHRR5eo?usp=sharing">Demo</a>
+                            &middot; <a target="_blank" href="https://www.youtube.com/watch?v=Mf2FOzDPxck">Video</a>
+                        </div>
+                        <div class="collapse mt-2" id="tldr_lagllama">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                A foundation model for probabilistic time series forecasting with strong zero-shot and few-shot capabilities
+                            </div>
+                        </div>
+                        <div class="collapse mt-2" id="abs_lagllama">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.
                             </div>
                         </div>
                     </div>
@@ -503,7 +467,7 @@
             <div class="px-4 py-2 row justify-content-md-center" id="publications">
                 <div class="col col-md-9 px-5">
                     <h2>Previous Work</h2>
-                    I previously worked on problems in out-of-distribution generalization, continual learning, and few-shot learning, spanning the domains of computer vision and natural language processing.
+                    In an earlier chapter (in the pre-LLM era), I worked on problems in out-of-distribution generalization, continual learning, and few-shot learning, spanning the domains of computer vision and natural language processing.
 
                     Please check my <a href="https://scholar.google.com/citations?hl=en&user=4ur98b4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> for a list of previous publications.
                 </div>
@@ -514,15 +478,17 @@
                     <h2>Invited Talks</h2>
                 
                     <ul>
-                            <li><b>Context-Aided Forecasting: Progress So Far and Next Big Challenges.</b><br> <a href="https://event.nectric.com.au/iif-osf/">IIF Workshop on Open-Source Forecasting</a>, Beijing, China, June 2025
-                            <li><b>Context is Key: A Benchmark for Forecasting with Essential Textual Information.</b><br>
+                            <!-- <li>Context-Aided Forecasting: Progress So Far and Next Big Challenges.<br>  -->
+                            <li>Context-Aided Forecasting: Progress So Far and Next Big Challenges.<br> 
+                                <a class="text-muted">JP Morgan Chase AI Research</a><span class="text-muted">, Virtual, Sep 2025.</span><br><a class="text-muted" href="https://event.nectric.com.au/iif-osf/">IIF Workshop on Open-Source Forecasting</a><span class="text-muted">, Beijing, China, June 2025</span>
+                            <li>Context is Key: A Benchmark for Forecasting with Essential Textual Information.<br>
                                 <!-- <a href="https://isf.forecasters.org/">International Symposium On Forecasting (ISF) 2025</a>, Beijing, China, July 2025.<br> -->
-                                <a>Morgan Stanley</a>, New York, Nov 2024.<br><a>Bombardier Inc.</a>, Virtual, Nov 2024.
+                                <a class="text-muted">Morgan Stanley</a><span class="text-muted">, New York, Nov 2024.</span><br><a class="text-muted">Bombardier Inc.</a><span class="text-muted">, Virtual, Nov 2024.</span>
                             <!-- <li><em>Context is Key: A Benchmark for Forecasting with Essential Textual Information.</em>  -->
-                            <li><b>Zero-Shot Forecasting with Natural Language Contextualization.</b><br> <a href="https://isf.forecasters.org/">International Symposium On Forecasting (ISF) 2024</a>, Dijon, France, July 2024.
-                            <li><b>Lag-Llama: Towards Foundation Models for Time Series Forecasting.</b><br> <a href="https://sites.google.com/mila.quebec/large-scale-ai-march/">AI @ Scale Workshop</a>, Mila-Quebec, Montreal, Mar 2024.
-                            <li><b>Towards General-Purpose Models for Time-Series Prediction.</b> <br><a href="https://www.meetup.com/montreal-time-series-meetup/events/298305168/">The Winter 2024 Montreal Time Series Meetup</a>, Montreal, Jan 2024.
-                            <li><b>Building Foundation Models for Time Series Data.</b><br><a href="https://sites.google.com/mila.quebec/6thnslw-no/home?authuser=0" target="_blank">The 6th workshop on Neural Scaling Laws</a> co-located with NeurIPS 2023, Virtual, Dec 2023.</li>
+                            <li>Zero-Shot Forecasting with Natural Language Contextualization.<br> <a class="text-muted" href="https://isf.forecasters.org/">International Symposium On Forecasting (ISF) 2024</a><span class="text-muted">, Dijon, France, July 2024.</span>
+                            <li>Lag-Llama: Towards Foundation Models for Time Series Forecasting.<br> <a class="text-muted" href="https://sites.google.com/mila.quebec/large-scale-ai-march/">AI @ Scale Workshop</a><span class="text-muted">, Mila-Quebec, Montreal, Mar 2024.</span>
+                            <li>Towards General-Purpose Models for Time-Series Prediction. <br><a class="text-muted" href="https://www.meetup.com/montreal-time-series-meetup/events/298305168/">The Winter 2024 Montreal Time Series Meetup</a><span class="text-muted">, Montreal, Jan 2024.</span>
+                            <li>Building Foundation Models for Time Series Data.<br><a class="text-muted" href="https://sites.google.com/mila.quebec/6thnslw-no/home?authuser=0" target="_blank">The 6th workshop on Neural Scaling Laws</a><span class="text-muted"> co-located with NeurIPS 2023, Virtual, Dec 2023.</span></li>
                     </ul>
                 </div>
             </div>
@@ -549,11 +515,11 @@
                         <tbody>
                             <tr>
                                 <div class="image_container" width="33%">
-                                <td>On the side, I am a <a href="https://en.wikipedia.org/wiki/Carnatic_music">Carnatic</a> Musician and a student of Vidwan <a href="https://en.wikipedia.org/wiki/Bharat_Sundar" target="_blank">Bharat Sundar</a>. I have performed Carnatic concerts in multiple venues in India, and continue to perform in and around Montréal and Ottawa regularly. <a href="https://youtu.be/8Guc2xVOKNA?si=tMdUfGHbzyxmCR-q" target="_blank">Here</a> is a recording of a concert of mine from July 2024. <br><br> I'm also a hybrid athelete (I enjoy running, biking and working out), and enjoy reading non-fiction.
+                                <td>On the side, I am a <a href="https://en.wikipedia.org/wiki/Carnatic_music">Carnatic</a> Musician. I have performed Carnatic concerts in multiple venues in India, Canada and the US regularly. <a href="https://www.youtube.com/watch?v=0-7s3417cQo" target="_blank">Here</a> is a recording of a concert of mine from Dec 2025. <br><br> I'm also a hybrid athelete (I enjoy running, biking and working out), and enjoy reading non-fiction.
                                     </td>
                                 </div>
                                 <div class="image_container" width="33%">
-                                <td><img width="100%" src="images/carnatic/may2022.jpeg"><br><center><small>From a concert performed in May 2022</small></center></td>
+                                <td><img width="100%" src="images/carnatic/dec2025.jpeg"><br><center><small>From a concert performed in Dec 2025</small></center></td>
                                 </div>
                                 <!-- <div class="image_container" width="33%">
                                 <td><img width="100%" src="images/carnatic/jan2019.jpeg"><br><center><small>Jan 2019</small></center></td>
@@ -570,7 +536,7 @@
         <!-- Footer -->
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container text-center">
-                <span class="text-muted">&copy; 2025 Arjun Ashok</span>
+                <span class="text-muted">&copy; 2026 Arjun Ashok</span>
             </div>
         </footer>
 

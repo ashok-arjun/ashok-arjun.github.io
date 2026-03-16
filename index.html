@@ -102,7 +102,7 @@
                     </p>
 
                     <p>
-                        My research interests are in time series forecasting, specifically in building flexible models. Some of my notable contributions include making transformer architectures faster and better for forecasting tasks (<a href="https://arxiv.org/abs/2310.01327" target="_blank">TACTiS-2</a>), building some of the early foundation models in this space (<a href="https://time-series-foundation-models.github.io/lag-llama.pdf" target="_blank">Lag-Llama</a>), developing methods and benchmarks for textual-context aided forecasting (<a href="https://arxiv.org/abs/2410.18959" target="_blank">CiK</a>, <a href="https://arxiv.org/abs/2508.09904" target="_blank">Beyond DP</a>), and building post-training data pipelines to adapt LLMs for multimodal forecasting.
+                        My research interests are in time series forecasting, specifically in building flexible models. Some of my notable contributions include making transformer architectures faster and better for forecasting tasks (<a href="https://arxiv.org/abs/2310.01327" target="_blank">TACTiS-2</a>), building some of the early foundation models in this space (<a href="https://time-series-foundation-models.github.io/lag-llama.pdf" target="_blank">Lag-Llama</a>), developing methods and benchmarks for textual-context aided forecasting (<a href="https://arxiv.org/abs/2410.18959" target="_blank">CiK</a>, <a href="https://arxiv.org/abs/2508.09904" target="_blank">Beyond DP</a>), and building post-training data pipelines to adapt LLMs for multimodal forecasting (<a href="https://arxiv.org/abs/2603.12451">CAF-7M</a>).
                     </p>
 
                     <p>
@@ -330,6 +330,31 @@
             <div class="px-4 py-2 row justify-content-md-center" id="preprints">
                 <div class="col col-md-9 px-5">
                     <h2>Selected Papers</h2>
+
+                    <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
+                        <div class="paper-title">
+                            Overcoming the Modality Gap in Context-Aided Forecasting
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">
+                            Vincent Zhihao Zheng, Étienne Marcotte, Arjun Ashok, Andrew Robert Williams, Lijun Sun, Alexandre Drouin, Valentina Zantedeschi
+                        </div>
+                        <div class="text-muted" style="font-size: 0.9rem;">Preprint; under review</div>
+                        <div class="mt-1" style="font-size: 0.9rem;">
+                            <a data-bs-toggle="collapse" href="#tldr_beyond" role="button" aria-expanded="false" aria-controls="tldr_beyond">TL;DR</a>
+                            &middot; <a data-bs-toggle="collapse" href="#abs_beyond" role="button" aria-expanded="false" aria-controls="abs_beyond">Abstract</a>
+                            &middot; <a target="_blank" href="https://arxiv.org/abs/2603.12451">arXiv</a>
+                        </div>
+                        <div class="collapse mt-2" id="tldr_beyond">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                A method to turn real-world time series datasets into multimodal context-aided forecasting datasets, which we use to generate a datasets containing 7 millions windows.
+                            </div>
+                        </div>
+                        <div class="collapse mt-2" id="abs_beyond">
+                            <div class="text-muted" style="font-size: 0.9rem;" align="justify">
+                                Context-aided forecasting (CAF) holds promise for integrating domain knowledge and forward-looking information, enabling AI systems to surpass traditional statistical methods. However, recent empirical studies reveal a puzzling gap: multimodal models often fail to outperform their unimodal counterparts. We hypothesize that this underperformance stems from poor context quality in existing datasets, as verification is challenging. To address these limitations, we introduce a semi-synthetic data augmentation method that generates contexts both descriptive of temporal dynamics and verifiably complementary to numerical histories. This approach enables massive-scale dataset creation, resulting in CAF-7M, a corpus of 7 million context-augmented time series windows, including a rigorously verified test set. We demonstrate that semi-synthetic pre-training transfers effectively to real-world evaluation, and show clear evidence of context utilization. Our results suggest that dataset quality, rather than architectural limitations, has been the primary bottleneck in context-aided forecasting.
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="mb-4 pb-3" style="border-bottom: 1px solid #e9ecef;">
                         <div class="paper-title">
